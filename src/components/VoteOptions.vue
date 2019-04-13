@@ -5,11 +5,8 @@
     </slot>
 
     <ul>
-      <slot v-for="optionItem in options"
-name="item" :option-item="optionItem">
-        <li :key="optionItem.id">
-{{ optionItem.text }}
-</li>
+      <slot v-for="optionItem in options" name="item" :option-item="optionItem">
+        <li :key="optionItem.id">{{ optionItem.text }}</li>
       </slot>
     </ul>
   </div>

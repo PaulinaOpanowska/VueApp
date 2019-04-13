@@ -1,10 +1,7 @@
 <template>
   <div>
     Settings
-    <BaseButton button-class="btnClass"
-:is-loading="isLoading" @click="ChangeLoading">
-AppButton
-</BaseButton>
+    <BaseButton button-class="btnClass" :is-loading="isLoading" @click="ChangeLoading">AppButton</BaseButton>
   </div>
 </template>
 
