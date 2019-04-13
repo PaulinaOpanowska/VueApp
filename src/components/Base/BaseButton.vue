@@ -1,8 +1,7 @@
 <template>
   <div>
-    <button v-bind="$attrs"
-class="button" :class="buttonClass" v-on="$listeners">
-      <slot />
+    <button v-bind="$attrs" class="button" :class="buttonClass" v-on="$listeners">
+      <slot/>
       <span v-if="isLoading">-loading...</span>
     </button>
   </div>
