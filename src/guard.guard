@@ -1,7 +1,8 @@
+import store from '@/store/store';
+
 export default (to, from, next) => {
-    localStorage.setItem('isAdmin', true)
-    let isAdmin = localStorage.getItem('isAdmin');
-    if (isAdmin) {
+    const user = store.state.user.user;
+    if (user.isAdmin) {
         next();
     } else {
         next({
