@@ -12,6 +12,7 @@ class="button" :class="buttonClass" v-on="$listeners">
 export default {
   inheritAttrs: false,
   props: {
+    // eslint-disable-next-line vue/require-default-prop
     buttonClass: {
       type: String
     },
