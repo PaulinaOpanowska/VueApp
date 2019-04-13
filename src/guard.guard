@@ -1,0 +1,12 @@
+export default (to, from, next) => {
+    localStorage.setItem('isAdmin', true)
+    let isAdmin = localStorage.getItem('isAdmin');
+    if (isAdmin) {
+        next();
+    } else {
+        next({
+            path: '/login',
+            query: { redirect: to.fullPath },
+        });
+    }
+};
