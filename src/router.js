@@ -1,10 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./components/Home.vue";
-import Vote from "./components/Vote.vue";
-import Score from "./components/Score.vue";
-import Settings from "./components/Settings.vue";
-import isAdmin from './guard.guard';
+import Home from "./views/Home.vue";
+import Vote from "./views/Vote.vue";
+import Score from "./views/Score.vue";
+import Settings from "./views/Settings.vue";
+import isAdmin from "./guard.guard";
 
 Vue.use(Router);
 
@@ -25,8 +25,7 @@ export default new Router({
     {
       path: "/score",
       name: "score",
-      component: Score,
-
+      component: Score
     },
     {
       path: "/settings",
